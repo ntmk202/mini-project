@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini project</title>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+
+<body>
+    <% if (user?.name) { %>
+        <nav>
+            <ul>
+                <li><a href="posts" alt="">Posts</a></li>
+                <li><a href="contact" alt="">Contact</a></li>
+                <li><a href="logout" alt="">Logout</a></li>
+                <li class="btn-deleted"><a href="deleteAccount" alt="">Delete account</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h2 class="title-header">
+                Logged in as: <%= user?.name %>
+            </h2>
+        </div>
+        <!-- <a href="posts" alt="">Posts</a>
+            <a href="logout" alt="">Logout</a>
+            <a href="deleteAccount" alt="">Delete account</a> -->
+        <%} else { %>
+            <div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="posts" alt="">Posts</a></li>
+                    <li><a href="contact" alt="">Contact</a></li>
+                    <li><a href="login" alt="">Login</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <h2 class="title-header">
+                    Not logged in
+                </h2>
+            </div>
+            <!-- <a href="posts" alt="">Posts</a>
+                <a href="login" alt="">Login</a> -->
+            <% } %>
+                <!-- <h2 style="margin-bottom: 5px;">Users</h2>
+                    <% for(var i=0; i < users?.length; i++) { %>
+                        <div>
+                            <div><%= users[i]?.name %>
+                            </div>
+                        </div>
+                        <% } %> -->
+</body>
+
+</html>

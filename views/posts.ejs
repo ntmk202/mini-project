@@ -1,0 +1,28 @@
+
+<html>
+<head>
+      <title>Posts</title>
+      <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <nav>
+        <h2>
+            Posts
+        </h2>
+        <ul>
+            <li><a href="/" alt="">Home</a></li>
+            <li><a href="addPost" alt="">Add post</a></li>
+            <li><a href="contact" alt="">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <% for(var i=0; i < posts?.length; i++) { %>
+    <div class="wrapper-post" style="border: 1px solid black; margin:10px 0px">
+         <div><%= posts[i]?.title%></div>
+         <div style="font-size: 0.8rem; color:#333; margin:5px 0">Author: <%= posts[i]?.user%></div>
+         <div><%= posts[i]?.content %> <a href="<%= posts[i]?.link %>" target="_blank"><%= posts[i]?.link %></a></div>
+    </div>
+    <% } %>
+</div>
+</body>
+</html>

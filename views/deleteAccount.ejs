@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>Delete account</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div class="wrapper-form">
+        <h2>Do you want to delete your account?</h2>
+        <form action="deleteAccount" method="POST">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <input class="btn-delete" type="submit" value="Yes">
+        </form>
+    </div>
+</body>
+
+</html>
